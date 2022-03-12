@@ -3517,7 +3517,7 @@ a {
     text-align: left;
   }
   .nav-menu > ul > li a {
-    font-size: 25px;
+    font-size: 0;
   }
   .nav-menu > ul > li a:hover:after {
     -webkit-transform: scale(0);
@@ -3532,6 +3532,9 @@ a {
   .nav-menu > ul.transformation li {
     opacity: 1;
     visibility: visible;
+  }
+  .nav-menu > ul.transformation li a {
+    font-size: 25px;
   }
   .nav-menu > ul.transformation {
     background-color: var(--colorWhite);
