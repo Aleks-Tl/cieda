@@ -456,7 +456,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var burger = document.querySelector('.burger'),
     menu = document.querySelector('.nav-menu').firstElementChild,
-    pageBody = document.querySelector('.page__body');
+    pageBody = document.querySelector('.page__body'),
+    menuLink = document.querySelectorAll('.nav-menu a');
+menuLink.forEach(function (el) {
+  if (window.location.pathname.indexOf(el.getAttribute('href')) > -1) {
+    el.classList.add('active');
+  }
+});
 burger.addEventListener('click', function () {
   burger.classList.toggle('open');
   menu.classList.toggle('transformation');
@@ -568,12 +574,6 @@ var swiperWinners = new Swiper(".winners__slider", {
     }
   }
 });
-var slideItem = document.querySelectorAll('.swiper-slide');
-/* for (let i = 0; slideItem.length > i; i++) {
-  if (slideItem[i].getAttribute("aria-label") === "4 / 5") {
-    slideItem[i].style.opacity = '0.2';
-  }
-} */
 })();
 
 /******/ })()
