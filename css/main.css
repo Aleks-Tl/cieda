@@ -555,6 +555,7 @@ a {
   flex-wrap: wrap;
 }
 .nav-menu > ul > li {
+  text-align: center;
   list-style: none;
   margin: 0 45px;
 }
@@ -611,7 +612,7 @@ a {
 
 .promo__wrap {
   padding-top: 125px;
-  padding-bottom: 325px;
+  padding-bottom: 250px;
 }
 .promo__content {
   max-width: 722px;
@@ -2209,6 +2210,11 @@ a {
 .news__nav > ul > li {
   margin-right: 23px;
 }
+@media (max-width: 576px) {
+  .news__nav > ul > li {
+    margin-right: 0;
+  }
+}
 .news__nav > ul > li a {
   display: inline-block;
   font-size: 18px;
@@ -2944,6 +2950,7 @@ a {
 
   .promo__wrap {
     background-position: 240px top !important;
+    padding-bottom: 200px;
   }
 
   .organisation {
@@ -3151,7 +3158,7 @@ a {
   }
 
   .promo__wrap {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
   .promo__content h1 {
     font-size: 35px;
@@ -3527,6 +3534,7 @@ a {
 
   .promo__wrap {
     background-size: cover !important;
+    padding-bottom: 0;
   }
 
   .organisation {
