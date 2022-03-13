@@ -487,8 +487,11 @@ function scrollFunction() {
   } else {
     document.querySelector('header').classList.remove('backgroundWhite');
   }
-} // Slider News & Blog
+}
 
+document.addEventListener("DOMContentLoaded", function (event) {
+  scrollFunction();
+}); // Slider News & Blog
 
 var swiper = new Swiper(".mainblog__slider", {
   slidesPerView: 3,
@@ -547,6 +550,7 @@ var swiperGallery = new Swiper(".huluku-gallery__slider", {
   }
 });
 var swiperWinners = new Swiper(".winners__slider", {
+  watchSlidesProgress: true,
   slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
