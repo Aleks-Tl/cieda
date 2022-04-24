@@ -69,6 +69,42 @@ html {
   box-sizing: inherit;
 }
 
+.all_pages {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: 101;
+}
+.all_pages:hover ul {
+  right: 0;
+}
+.all_pages .page_point {
+  padding: 10px 15px;
+  background: #00d2ff;
+  cursor: pointer;
+}
+.all_pages ul {
+  background: #00D2FF;
+  padding: 15px 20px;
+  position: absolute;
+  top: 61%;
+  width: 200px;
+  right: -200px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  max-height: 450px;
+  overflow-y: auto;
+}
+.all_pages ul li {
+  list-style: none;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.all_pages ul li a {
+  color: #fff;
+}
+
 .page {
   height: 100%;
   font-family: var(--font-family, sans-serif);
